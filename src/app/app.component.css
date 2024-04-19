@@ -1,0 +1,37 @@
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #333; /* Color de fondo */
+    padding: 20px 0; /* Espaciado interior */
+    text-align: center; /* Alineación del texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  nav a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    margin: 0 25px; /* Espacio entre enlaces */
+    font-size: 1.2rem; /* Tamaño del texto */
+    font-weight: 600; /* Grosor de la fuente */
+    transition: color 0.3s; /* Transición suave del color */
+    position: relative; /* Posición relativa */
+  }
+  
+  nav a::before {
+    content: ''; /* Contenido vacío */
+    position: absolute; /* Posición absoluta */
+    bottom: -2px; /* Alineación con el texto */
+    left: 0; /* Alineación con el borde izquierdo */
+    width: 100%; /* Ancho completo */
+    height: 2px; /* Grosor de la línea */
+    background-color: transparent; /* Color de la línea */
+    transition: background-color 0.3s; /* Transición suave del color */
+  }
+  
+  nav a:hover::before {
+    background-color: #ff7f00; /* Color de la línea al pasar el ratón */
+  }
+  
+  nav a:hover {
+    color: #ff7f00; /* Color del texto al pasar el ratón */
+  }
+  
